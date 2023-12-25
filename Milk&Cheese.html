@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >  
+    <title> Milk & Cheese </title>
+    <style>
+        body 
+        {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+           
+        }
+
+        header 
+        {
+            background-color: rgb(0, 87, 121);
+            color: #fff;
+            padding: 0.3em;
+            text-align: center;
+        }
+
+        header img 
+        {
+            max-width: 80px;
+            left: 0; 
+        }
+
+        nav 
+        {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(67, 185, 194);
+            padding: 0.5em;
+        }
+
+        nav a 
+        {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 5px;
+            margin:  0.5em;
+            font-weight: bold;
+        }
+
+        section 
+        {
+            padding: 2em;
+        }
+
+        h2 
+        {
+            color: #333;
+        }
+
+
+        footer 
+        {
+    background-color: rgb(0, 87, 121);
+    color: #fff;
+    padding: 0.5em ;
+    }
+
+.footer-container 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.footer-info 
+{
+    text-align: center;
+}
+
+.social-media img 
+{
+    width: 30px;
+    margin: 0 0.5em;
+}
+        
+        
+        div 
+        {
+            display: flex;
+            justify-content: space-around;
+
+        }
+        footer img
+        {
+            display: inline-flex;
+            justify-content: space-between;
+        }
+        a:link
+        {
+          color: green;  
+        }
+        
+          a:hover
+          {
+            color: blue;
+          }
+          a:active
+          {
+            color: red;
+          }
+        
+        
+       
+    </style>
+
+</head>
+<body>
+    <header>
+        <img align="left" src="c&m.png" alt="Milk & Cheese Co. Logo" >  
+
+        <h1>Milk & Cheese Co.</h1>
+    </header>
+
+    <nav>    
+        <a href="#"> Home </a>
+        <a href="#"> Products </a>
+        <a href="#"> About Us </a>
+        <a href="#" onclick="openContactPage()"> Contact </a>
+        <a href="sign_up.html"> Sign Up </a>
+    </nav>
+
+    <section>
+        <h2>Welcome to Milk & Cheese Co.</h2>
+        <p>Explore our delicious range of milk and cheese products.</p>
+    </section>
+    
+    <div>
+        <img src="cheese.png" width="20%" height="30%">
+        <img src="milk.jpg" width="20%" height="25%" >
+        <img src="creamy.png" width="17%" height="27%" >        
+        <img src="american.png" width="20%" height="30%" >
+
+    </div>
+    <dl>
+        <dt style="font-weight: bold;">
+            FAQ:
+        </dt>
+        <dd>
+            <ul>
+                <li>
+                   <a href="#">How can I register?</a> 
+                </li>
+                <li>
+                    <a href="#">How much time does order take to arrive?</a>
+                </li>
+                <li>
+                   <a href="#">How can I buy a product?</a> 
+                </li>
+            </ul>
+        </dd>
+    </dl>
+   
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer-info">
+                <p>&copy; 2023 Milk&Cheese Co. All rights reserved.</p>
+                <p>123 Tanta, Gharbia, Egypt</p>
+                <p>Email: info@milkandcheese.com</p>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank"><img src="facebook.png" height="30px"  alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="x.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openContactPage() {
+          window.location.href = 'contact.html';
+        }
+        function openSignUpPage() {
+          window.location.href = 'sign_up.html';
+        }
+
+        </script>
+        
+</body>
+</html>
